@@ -1,0 +1,32 @@
+ssh
+
+hostname ----
+enable password ----
+username ---- password ----
+ip domain-name -----
+crypto key generate rsa: ----
+ip ssh version 2
+line vty 0 15
+transport input ssh
+login local
+
+ssh -l  admin {ip adresa}
+
+
+STP
+https://blog.iservery.com/2021/04/12/spannig-tree-protocol/
+interface
+spanningtree vlan 1 cost -----
+
+OSPF
+https://www.freecodecamp.org/news/subnet-cheat-sheet-24-subnet-mask-30-26-27-29-and-other-ip-address-cidr-network-references/
+router ospf 1
+network (Network adresa sítě - první adresa) (opačná maska sítě - wildcard mask) area 0
+
+DHCP
+int fa0/0
+ip dhcp pool -----
+network ------------------(network of the port f0/0)
+
+Dvojitá konektivita
+
